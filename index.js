@@ -2,7 +2,7 @@ async function fetchWeather() {
     let searchInput = document.getElementById("search").value;
     const weatherDataSection = document.getElementById("weather-data");
     weatherDataSection.style.display = "block";
-    const apiKey = "609ec20121631977b37a3f64b2523a62";
+    const apiKey = "";
 
     updateBackgroundImage(searchInput);
 
@@ -66,7 +66,7 @@ async function fetchWeather() {
 }
 
 async function updateBackgroundImage(cityName) {
-    const pexelsApiKey = 'htUZ3uLYjRuK7S92ahCjdNR4vzWB2VEIAJ6VKkOx7zVZtJPV3eSFLXdy';
+    const pexelsApiKey = '';
     const url = `https://api.pexels.com/v1/search?query=${cityName}&per_page=5`;
 
     try {
